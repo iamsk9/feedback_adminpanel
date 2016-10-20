@@ -25,4 +25,6 @@ angular.module('yapp')
      $state.go('users');
    };
 
+
+
   });
