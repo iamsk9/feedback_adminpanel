@@ -11,10 +11,18 @@ angular.module('yapp')
   .controller('LoginCtrl', function($scope, $location) {
 
     $scope.submit = function() {
-
-      $location.path('/dashboard');
-
-      return false;
-    }
+        if($scope.logdata.user=='admin' && $scope.logdata.password=='admin')
+         {
+           $location.path('/dashboard');
+           return false;
+         }
+         else if($scope.logdata.user==' ' && $scope.logdata.password==' ')
+         {
+           $scope.message="please enter username or password";
+         }
+         else {
+           $scope.message="Incorrect username or password";
+         }
+   }
 
   });

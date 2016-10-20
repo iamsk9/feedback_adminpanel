@@ -1,17 +1,15 @@
-angular.module('starter.services', [])
+angular.module('starter.services',[])
 
-.service('UserService', function ($http, Backand) {
-
+.service('UserService', function ($http) {
   getUsers = function(data)
   {
     console.log(data);
     var link = 'http://epicsoft.esy.es/customer_feedback.php';
-    return $http.get(link).then(function (res){
+    return $http.post(link).then(function (res){
       console.log(res.data);
       return res.data;
     });
   };
-
   return{
     getUsers: getUsers
   };

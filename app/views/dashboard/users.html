@@ -14,7 +14,7 @@
         <th>Feedback</th>
         <th>Rating</th>
       </tr>
-      <tr ng-repeat="user in users" ng-if="user.fullname&&user.deleted_at==''">
+      <tr ng-repeat="user in users">
 				<td>
 					<input type="checkbox" ng-model="string" ng-click="selected(user.id)">
 				</td>
