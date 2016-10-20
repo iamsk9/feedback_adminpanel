@@ -36,6 +36,18 @@ angular
           templateUrl: 'views/dashboard.html',
           controller: 'DashboardCtrl'
         })
+        .state('users', {
+           url: '/users',
+           parent: 'dashboard',
+           templateUrl: 'views/dashboard/users.html',
+           controller: 'DashboardCtrl'
+       })
+         .state('addUser', {
+              url: '/addUser',
+              parent: 'dashboard',
+              templateUrl: 'views/dashboard/addUser.html',
+              controller: 'DashboardCtrl'
+            })
           .state('overview', {
             url: '/overview',
             parent: 'dashboard',
