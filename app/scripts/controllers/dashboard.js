@@ -21,4 +21,8 @@ angular.module('yapp')
      }
    getUser();
 
+   $scope.displayUsers = function(){
+     $state.go('users');
+   };
+
   });
