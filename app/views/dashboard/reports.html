@@ -3,12 +3,46 @@
 	<h2>Reports <small>Work with Chart.js and D3</small></h2>
 	<span class="glyphicon glyphicon-dashboard bg-fade"></span>
 	<div class="jumbotron">
-		<div class="container">
-			<h1>Add Charts here</h1>
-			<p>You can use C3.js or Chart.js</p>
-			<p>
-				<a class="btn btn-primary btn-lg btn-outline btn-rounded">Learn more</a>
-			</p>
+		<div class="barfigure">
+			<canvas id="bar" class="chart chart-bar" width="30px" height="10px"
+				chart-data="bardata" chart-labels="barlabels"> chart-series="series"
+			</canvas>
+			<center><h3><strong>Customers Visited</strong></h3></center>
 		</div>
+		<br><br>
+			<div class="doughnutgraph">
+				<canvas id="doughnut" class="chart chart-doughnut" width="30px" height="10px"
+	  			chart-data="ddata" chart-labels="dlabels">
+				</canvas>
+				<center><h3><strong>Budget Range</strong></h3></center>
+			</div>
+			<br><br>
+			<div class="sagraph">
+				<canvas id="pie" class="chart chart-pie" width="30px" height="10px"
+				  chart-data="sadata" chart-labels="salabels" chart-options="options">
+				</canvas>
+				<center><h3><strong>Store Ambience</strong></h3></center>
+			</div>
+		<br><br>
+		<div class="sqgraph">
+			<canvas id="pie" class="chart chart-pie" width="30px" height="10px"
+				chart-data="sqdata" chart-labels="sqlabels" chart-options="options">
+			</canvas>
+			<center><h3><strong>Store Quality</strong></h3></center>
+		</div>
+		<br><br>
+		<div class="rpgraph">
+			<canvas id="pie" class="chart chart-pie" width="30px" height="10px"
+				chart-data="rpdata" chart-labels="rplabels" chart-options="options">
+			</canvas>
+			<center><h3><strong>Range of Products</strong></h3></center>
+		</div>
+	<br><br>
+	<div class="qsdata">
+		<canvas id="pie" class="chart chart-pie" width="30px" height="10px"
+			chart-data="qsdata" chart-labels="qslabels" chart-options="options">
+		</canvas>
+		<center><h3><strong>Service Quality</strong></h3></center>
+	</div>
 	</div>
 </div>
