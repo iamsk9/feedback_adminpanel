@@ -16,8 +16,8 @@ angular.module('yapp')
       console.log(result['details'][0]);
       for(var i=0;i<result['details'].length;i++)
         $scope.users[i] = result['details'][i];
-      //$scope.userLength=$scope.users.length;
         });
+        $scope.userLength=$scope.users.length;
      }
      getUser();
 
